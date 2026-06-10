@@ -58,7 +58,7 @@ Always respond in JSON format:
 
   try {
     const completion = await client.chat.completions.create({
-      model: "llama-3.1-8b-instant", // نموذج مجاني وسريع من Groq
+     model: "llama3-8b-8192", // نموذج مجاني وسريع من Groq
       messages,
       response_format: { type: "json_object" },
       temperature: 0.7,
