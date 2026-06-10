@@ -19,7 +19,7 @@ export async function sendFacebookMessage(
   } else if (reply.type === "quick_reply") {
     payload = {
       recipient: { id: psid },
-      message: reply.content, // must contain text and quick_replies array
+      message: reply.content,
     };
   } else {
     logger.warn("Unknown reply type for Facebook:", reply.type);
